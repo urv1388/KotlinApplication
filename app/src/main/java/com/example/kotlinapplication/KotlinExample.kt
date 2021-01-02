@@ -83,7 +83,7 @@ fun fiveStarReviews(productRatings: Array<Array<Int>>, ratingThreshold: Int): In
     }
     return add2Rating(ratingThreshold, finalProductRatings)
 
-
+//This is remote branch
 }
 
 
@@ -94,16 +94,17 @@ fun add2Rating(ratingThreshold: Int, finalProductRatings: MutableList<Array<Int>
 
 
 
-    for (mElement in finalProductRatings) {
+    /*for (mElement in finalProductRatings) {
         println(mElement.toList())
         finalFiveStar += checkRateAndAddMore(
             finalProductRatings, mElement,
             ratingThreshold, 0
         )
 
-    }
+    }*/
     return finalFiveStar
 }
+/*
 
 fun checkRateAndAddMore(finalProductRatings: MutableList<Array<Int>>, mElement: Array<Int>, ratingThreshold: Int, rating: Int): Int {
     var isMaxRatingReached
@@ -112,6 +113,7 @@ fun checkRateAndAddMore(finalProductRatings: MutableList<Array<Int>>, mElement: 
 
     return rating
 }
+*/
 
 
 //
